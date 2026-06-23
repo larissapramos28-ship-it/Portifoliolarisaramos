@@ -1334,7 +1334,7 @@
           <div class="hero-stat-label">Grandes emp.</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-num">5+</div>
+          <div class="hero-stat-num">6+</div>
           <div class="hero-stat-label">Projetos</div>
         </div>
       </div>
@@ -1758,6 +1758,37 @@
     </div>
 
     <!-- Projeto 5 -->
+    <div class="project-card fade-up" onclick="openModal('modal-backlog')">
+      <div class="project-thumb">
+        <div class="project-thumb-inner">🗂️</div>
+        <div class="project-thumb-overlay"></div>
+        <span class="project-type-badge">Python · Excel</span>
+      </div>
+      <div class="project-body">
+        <h3 class="project-title">Gestão de Backlog — Painel Operacional</h3>
+        <p class="project-desc">Sistema para organizar, acompanhar e atualizar backlog operacional a partir de planilhas, com visão consolidada, filtros e indicadores para priorização de demandas.</p>
+        <div class="project-meta">
+          <div class="project-meta-row">
+            <span class="project-meta-label">Desafio</span>
+            <span class="project-meta-value">Backlog acompanhado em arquivos dispersos, dificultando leitura rápida de volume, status e responsáveis</span>
+          </div>
+          <div class="project-meta-row">
+            <span class="project-meta-label">Solução</span>
+            <span class="project-meta-value">Painel de gestão com importação de base Excel, filtros operacionais e visão consolidada para acompanhamento diário</span>
+          </div>
+        </div>
+        <div class="project-stack">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Flask</span>
+          <span class="project-tag">Excel</span>
+          <span class="project-tag">Backlog</span>
+        </div>
+        <div class="project-result">✅ <strong>Resultado:</strong> Mais clareza para priorizar demandas, acompanhar evolução e reduzir retrabalho operacional</div>
+        <div class="project-cta">Ver detalhes →</div>
+      </div>
+    </div>
+
+    <!-- Projeto 6 -->
     <div class="project-card fade-up" onclick="openModal('modal-kpis')">
       <div class="project-thumb">
         <div class="project-thumb-inner">📈</div>
@@ -2015,6 +2046,47 @@
             <img src="assets/smart-luz/10-relacao-consumo.png" alt="Tabela de relação de consumo após preenchimento do formulário no Smart Luz">
             <figcaption>10 · Relação de consumo</figcaption>
           </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-backlog" onclick="closeModalOnOverlay(event)">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">Gestão de Backlog — Painel Operacional</div>
+      <button class="modal-close" onclick="closeModal('modal-backlog')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-thumb">🗂️</div>
+      <div class="modal-section">
+        <div class="modal-section-title">Sobre o Projeto</div>
+        <p class="modal-section-text">Sistema de apoio à gestão de backlog operacional, criado para transformar planilhas de acompanhamento em uma visão mais clara, filtrável e acionável. A solução centraliza informações, facilita a leitura de volume por status e apoia a rotina de priorização de demandas.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Desafio</div>
+        <p class="modal-section-text">O controle de backlog em arquivos manuais exigia conferências repetitivas, dificultava o entendimento rápido dos gargalos e consumia tempo em atividades de consolidação. A gestão precisava de uma forma mais simples de visualizar pendências, responsáveis e evolução do trabalho.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Solução Técnica</div>
+        <p class="modal-section-text">Desenvolvimento de painel web com importação de bases Excel, filtros de consulta, consolidação de indicadores e atualização orientada ao fluxo operacional. A aplicação organiza os dados em uma interface mais direta, reduzindo dependência de controles paralelos e melhorando a rastreabilidade das demandas.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Resultados Alcançados</div>
+        <div class="modal-metrics">
+          <div class="modal-metric">
+            <div class="modal-metric-val">1 base</div>
+            <div class="modal-metric-label">Visão consolidada</div>
+          </div>
+          <div class="modal-metric">
+            <div class="modal-metric-val">Filtros</div>
+            <div class="modal-metric-label">Análise rápida</div>
+          </div>
+          <div class="modal-metric">
+            <div class="modal-metric-val">Diário</div>
+            <div class="modal-metric-label">Apoio à rotina</div>
+          </div>
         </div>
       </div>
     </div>
