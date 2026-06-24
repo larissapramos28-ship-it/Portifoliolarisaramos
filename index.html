@@ -1760,30 +1760,33 @@
     <!-- Projeto 5 -->
     <div class="project-card fade-up" onclick="openModal('modal-backlog')">
       <div class="project-thumb">
-        <div class="project-thumb-inner">🗂️</div>
+        <div class="project-thumb-inner">
+          <img class="project-thumb-img" src="assets/backlog/01-email-automatico.jpeg" alt="Tela de login do sistema Gestão Backlog">
+        </div>
         <div class="project-thumb-overlay"></div>
         <span class="project-type-badge">Python · Excel</span>
       </div>
       <div class="project-body">
         <h3 class="project-title">Gestão de Backlog — Painel Operacional</h3>
-        <p class="project-desc">Sistema para organizar, acompanhar e atualizar backlog operacional a partir de planilhas, com visão consolidada, filtros e indicadores para priorização de demandas.</p>
+        <p class="project-desc">Portal para gestão de demandas com visões dinâmicas, comparação de relatórios, planilhas priorizadas por SLA e automação de e-mail para envio dos resumos operacionais.</p>
         <div class="project-meta">
           <div class="project-meta-row">
             <span class="project-meta-label">Desafio</span>
-            <span class="project-meta-value">Backlog acompanhado em arquivos dispersos, dificultando leitura rápida de volume, status e responsáveis</span>
+            <span class="project-meta-value">Backlog acompanhado em relatórios manuais, sem comparação rápida entre base anterior e nova</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Solução</span>
-            <span class="project-meta-value">Painel de gestão com importação de base Excel, filtros operacionais e visão consolidada para acompanhamento diário</span>
+            <span class="project-meta-value">Portal com importação de bases, visões dinâmicas, e-mail automático e planilha de pendências com prioridade visual</span>
           </div>
         </div>
         <div class="project-stack">
           <span class="project-tag">Python</span>
           <span class="project-tag">Flask</span>
           <span class="project-tag">Excel</span>
+          <span class="project-tag">E-mail</span>
           <span class="project-tag">Backlog</span>
         </div>
-        <div class="project-result">✅ <strong>Resultado:</strong> Mais clareza para priorizar demandas, acompanhar evolução e reduzir retrabalho operacional</div>
+        <div class="project-result">✅ <strong>Resultado:</strong> Rotina com alertas, priorização por SLA e leitura comparativa entre relatório anterior x novo</div>
         <div class="project-cta">Ver detalhes →</div>
       </div>
     </div>
@@ -2053,40 +2056,79 @@
 </div>
 
 <div class="modal-overlay" id="modal-backlog" onclick="closeModalOnOverlay(event)">
-  <div class="modal">
+  <div class="modal modal-wide">
     <div class="modal-header">
       <div class="modal-title">Gestão de Backlog — Painel Operacional</div>
       <button class="modal-close" onclick="closeModal('modal-backlog')">✕</button>
     </div>
     <div class="modal-body">
-      <div class="modal-thumb">🗂️</div>
+      <div class="modal-thumb modal-thumb-img">
+        <img src="assets/backlog/01-email-automatico.jpeg" alt="Tela de login do sistema Gestão Backlog">
+      </div>
       <div class="modal-section">
         <div class="modal-section-title">Sobre o Projeto</div>
-        <p class="modal-section-text">Sistema de apoio à gestão de backlog operacional, criado para transformar planilhas de acompanhamento em uma visão mais clara, filtrável e acionável. A solução centraliza informações, facilita a leitura de volume por status e apoia a rotina de priorização de demandas.</p>
+        <p class="modal-section-text">Sistema de apoio à gestão de backlog operacional, criado para transformar bases e relatórios manuais em um portal centralizado de acompanhamento. A solução organiza demandas pendentes, gera visões dinâmicas por fila/status/SLA e entrega uma leitura rápida da evolução entre o relatório anterior e o novo.</p>
       </div>
       <div class="modal-section">
         <div class="modal-section-title">Desafio</div>
-        <p class="modal-section-text">O controle de backlog em arquivos manuais exigia conferências repetitivas, dificultava o entendimento rápido dos gargalos e consumia tempo em atividades de consolidação. A gestão precisava de uma forma mais simples de visualizar pendências, responsáveis e evolução do trabalho.</p>
+        <p class="modal-section-text">O controle de backlog em arquivos manuais exigia conferências repetitivas, dificultava o entendimento rápido dos gargalos e não destacava com clareza quais casos estavam críticos ou próximos do vencimento. Também havia retrabalho para comparar a base anterior com a nova e montar comunicações de acompanhamento.</p>
       </div>
       <div class="modal-section">
         <div class="modal-section-title">Solução Técnica</div>
-        <p class="modal-section-text">Desenvolvimento de painel web com importação de bases Excel, filtros de consulta, consolidação de indicadores e atualização orientada ao fluxo operacional. A aplicação organiza os dados em uma interface mais direta, reduzindo dependência de controles paralelos e melhorando a rastreabilidade das demandas.</p>
+        <p class="modal-section-text">Desenvolvimento de painel web com importação de bases Excel, filtros operacionais, visões dinâmicas e geração de resumo comparativo entre relatório anterior x novo. O sistema também cria uma planilha com as visões e bases de casos pendentes já coloridas por prioridade: vermelho para SLA crítico e amarelo para casos próximos de vencer.</p>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Automação de E-mail</div>
+        <p class="modal-section-text">Criação de envio automático de e-mail com as visões das dinâmicas e um resumo executivo do backlog, destacando variações entre a base anterior e a base atual. A rotina facilita a comunicação com a operação e reduz o tempo gasto na montagem manual de relatórios recorrentes.</p>
       </div>
       <div class="modal-section">
         <div class="modal-section-title">Resultados Alcançados</div>
         <div class="modal-metrics">
           <div class="modal-metric">
-            <div class="modal-metric-val">1 base</div>
-            <div class="modal-metric-label">Visão consolidada</div>
+            <div class="modal-metric-val">E-mail</div>
+            <div class="modal-metric-label">Resumo automático</div>
           </div>
           <div class="modal-metric">
-            <div class="modal-metric-val">Filtros</div>
-            <div class="modal-metric-label">Análise rápida</div>
+            <div class="modal-metric-val">SLA</div>
+            <div class="modal-metric-label">Prioridade visual</div>
           </div>
           <div class="modal-metric">
-            <div class="modal-metric-val">Diário</div>
-            <div class="modal-metric-label">Apoio à rotina</div>
+            <div class="modal-metric-val">Antes x Novo</div>
+            <div class="modal-metric-label">Comparativo rápido</div>
           </div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Telas do Projeto</div>
+        <div class="project-gallery">
+          <figure class="project-shot">
+            <img src="assets/backlog/01-email-automatico.jpeg" alt="Tela de login do sistema Gestão Backlog">
+            <figcaption>01 · Portal de gestão de demandas</figcaption>
+          </figure>
+          <figure class="project-shot">
+            <img src="assets/backlog/02-visao-geral.png" alt="Visão geral do portal de Gestão Backlog">
+            <figcaption>02 · Visão geral do backlog</figcaption>
+          </figure>
+          <figure class="project-shot">
+            <img src="assets/backlog/03-relatorio-anterior-novo.png" alt="Dinâmica com matriz de SLA e filtros do relatório">
+            <figcaption>03 · Dinâmicas com matriz por SLA</figcaption>
+          </figure>
+          <figure class="project-shot">
+            <img src="assets/backlog/04-planilha-priorizada.png" alt="Planilha com visão de casos pendentes e priorização por SLA">
+            <figcaption>04 · Planilha com prioridades por SLA</figcaption>
+          </figure>
+          <figure class="project-shot">
+            <img src="assets/backlog/05-base-pendentes.png" alt="Base de casos pendentes organizada para acompanhamento">
+            <figcaption>05 · Base dos casos pendentes</figcaption>
+          </figure>
+          <figure class="project-shot">
+            <img src="assets/backlog/06-visoes-dinamicas.png" alt="Planilha colorida com casos críticos em vermelho e próximos do vencimento em amarelo">
+            <figcaption>06 · Casos coloridos por prioridade</figcaption>
+          </figure>
+          <figure class="project-shot">
+            <img src="assets/backlog/07-regras-sla.png" alt="Resumo e regras de acompanhamento do SLA do backlog">
+            <figcaption>07 · Resumo e regras de acompanhamento</figcaption>
+          </figure>
         </div>
       </div>
     </div>
